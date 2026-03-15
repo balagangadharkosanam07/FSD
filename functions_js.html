@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Number Operations</title>
+
+<script>
+
+function factorial()
+{
+    var n = parseInt(document.getElementById("num").value);
+    var fact = 1;
+
+    for(var i=1;i<=n;i++)
+    {
+        fact = fact * i;
+    }
+
+    document.getElementById("result").innerHTML =
+    "Factorial of " + n + " is " + fact;
+}
+
+function fibonacci()
+{
+    var n = parseInt(document.getElementById("num").value);
+
+    var a=0,b=1,c;
+
+    var series="";
+
+    for(var i=1;i<=n;i++)
+    {
+        series += a + " ";
+        c = a + b;
+        a = b;
+        b = c;
+    }
+
+    document.getElementById("result").innerHTML =
+    "Fibonacci Series: " + series;
+}
+
+function prime()
+{
+    var n = parseInt(document.getElementById("num").value);
+    var output="";
+
+    for(var i=2;i<=n;i++)
+    {
+        var flag=1;
+
+        for(var j=2;j<i;j++)
+        {
+            if(i%j==0)
+            {
+                flag=0;
+                break;
+            }
+        }
+
+        if(flag==1)
+        output += i + " ";
+    }
+
+    document.getElementById("result").innerHTML =
+    "Prime numbers upto " + n + ": " + output;
+}
+
+function palindrome()
+{
+    var n = document.getElementById("num").value;
+    var rev = n.split("").reverse().join("");
+
+    if(n == rev)
+    document.getElementById("result").innerHTML =
+    n + " is a PALINDROME";
+    else
+    document.getElementById("result").innerHTML =
+    n + " is NOT a PALINDROME";
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h2>Number Operations</h2>
+
+Enter a Number:
+<input type="text" id="num"><br><br>
+
+<button onclick="factorial()">Factorial</button>
+<button onclick="fibonacci()">Fibonacci</button>
+<button onclick="prime()">Prime</button>
+<button onclick="palindrome()">Palindrome</button>
+
+<br><br>
+
+<h3 id="result"></h3>
+
+</body>
+</html>

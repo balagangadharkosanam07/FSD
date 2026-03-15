@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bank Denomination</title>
+<script>
+
+function denomination()
+{
+var amount = parseInt(prompt("Enter Amount"));
+var notes;
+
+notes = parseInt(amount/100);
+amount = amount % 100;
+document.write(notes + " - 100's <br>");
+
+notes = parseInt(amount/50);
+amount = amount % 50;
+document.write(notes + " - 50's <br>");
+
+notes = parseInt(amount/20);
+amount = amount % 20;
+document.write(notes + " - 20's <br>");
+
+notes = parseInt(amount/10);
+amount = amount % 10;
+document.write(notes + " - 10's <br>");
+
+notes = parseInt(amount/5);
+amount = amount % 5;
+document.write(notes + " - 5's <br>");
+
+notes = parseInt(amount/2);
+amount = amount % 2;
+document.write(notes + " - 2's <br>");
+
+document.write(amount + " - 1's");
+}
+
+</script>
+</head>
+
+<body onload="denomination()">
+</body>
+</html>
