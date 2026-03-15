@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <h2 align="center">Student Registration Form</h2>
+
+    <form>
+
+        <table border="1" align="center" cellpadding="10" cellspacing="0">
+
+            <!-- Text Field -->
+            <tr>
+                <td>Full Name:</td>
+                <td>
+                    <input type="text" name="fullname" placeholder="Enter your name">
+                </td>
+            </tr>
+
+            <!-- Password Field -->
+            <tr>
+                <td>Password:</td>
+                <td>
+                    <input type="password" name="password" placeholder="Enter password">
+                </td>
+            </tr>
+
+            <!-- Number Field -->
+            <tr>
+                <td>Mobile Number:</td>
+                <td>
+                    <input type="number" name="mobile" placeholder="Enter mobile number">
+                </td>
+            </tr>
+
+            <!-- Date of Birth Field -->
+            <tr>
+                <td>Date of Birth:</td>
+                <td>
+                    <input type="date" name="dob">
+                </td>
+            </tr>
+
+            <!-- Radio Buttons -->
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other
+                </td>
+            </tr>
+
+            <!-- Checkboxes -->
+            <tr>
+                <td>Languages Known:</td>
+                <td>
+                    <input type="checkbox" name="lang" value="english"> English
+                    <input type="checkbox" name="lang" value="hindi"> Hindi
+                    <input type="checkbox" name="lang" value="telugu"> Telugu
+                </td>
+            </tr>
+
+            <!-- Select Option List Box -->
+            <tr>
+                <td>Course Selected:</td>
+                <td>
+                    <select name="course">
+                        <option>Select Course</option>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>JavaScript</option>
+                        <option>Java Full Stack</option>
+                        <option>Cyber Security</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Text Area -->
+            <tr>
+                <td>Address:</td>
+                <td>
+                    <textarea name="address" rows="4" cols="30"
+                        placeholder="Enter your address"></textarea>
+                </td>
+            </tr>
+
+            <!-- Submit and Reset Buttons -->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear Form">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+</body>
+</html>

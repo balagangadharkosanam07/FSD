@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Style Levels Example</title>
+
+    <!-- ✅ External CSS Link -->
+    <link rel="stylesheet" href="externalstyle.css">
+
+    <!-- ✅ Internal CSS -->
+    <style>
+        /* Selector: h2
+           Property: color
+           Value: blue */
+        h2 {
+            color: blue;
+            text-align: center;
+        }
+
+        /* Selector: .internalBox
+           Property: background-color
+           Value: lightyellow */
+        .internalBox {
+            background-color: lightyellow;
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>CSS Styles Demonstration</h1>
+
+    <!-- ✅ Inline CSS Example -->
+    <p style="color: red; font-size: 20px;">
+        This paragraph uses Inline CSS.
+    </p>
+
+    <!-- ✅ Internal CSS Example -->
+    <h2>This Heading uses Internal CSS</h2>
+
+    <div class="internalBox">
+        This DIV is styled using Internal CSS.
+    </div>
+
+    <!-- ✅ External CSS Example -->
+    <h3>This Heading uses External CSS</h3>
+
+    <p class="externalPara">
+        This paragraph is styled using External CSS file.
+    </p>
+
+</body>
+</html>

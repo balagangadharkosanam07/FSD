@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Voter Eligibility</title>
+
+<style>
+table,th,td{
+border:1px solid black;
+border-collapse:collapse;
+padding:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>Voter Eligibility Check</h2>
+
+<table>
+<tr>
+<th>Name</th>
+<th>Age</th>
+<th>Eligibility</th>
+</tr>
+
+<tr>
+<td id="name"></td>
+<td id="age"></td>
+<td id="result"></td>
+</tr>
+
+</table>
+
+<script>
+
+var name=prompt("Enter your name");
+var age=prompt("Enter your age");
+
+document.getElementById("name").innerHTML=name;
+document.getElementById("age").innerHTML=age;
+
+if(age>=18)
+{
+document.getElementById("result").innerHTML="Eligible to Vote";
+}
+else
+{
+document.getElementById("result").innerHTML="Not Eligible to Vote";
+}
+
+</script>
+
+</body>
+</html>

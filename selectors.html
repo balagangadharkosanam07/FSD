@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors Example</title>
+
+    <style>
+
+        /* ============================================
+           ✅ 1. SIMPLE SELECTORS
+        ============================================ */
+
+        /* Element Selector */
+        p {
+            color: blue;
+        }
+
+        /* ID Selector */
+        #mainHeading {
+            color: red;
+            text-align: center;
+        }
+
+        /* Class Selector */
+        .box {
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* Group Selector */
+        h2, h3 {
+            color: green;
+        }
+
+        /* Universal Selector */
+        * {
+            font-family: Arial;
+        }
+
+
+        /* ============================================
+           ✅ 2. COMBINATOR SELECTORS
+        ============================================ */
+
+        /* Descendant Selector (space) */
+        div p {
+            background-color: lightyellow;
+        }
+
+        /* Child Selector ( > ) */
+        div > h3 {
+            color: purple;
+        }
+
+        /* Adjacent Sibling Selector ( + ) */
+        h2 + p {
+            border: 2px solid black;
+        }
+
+        /* General Sibling Selector ( ~ ) */
+        h2 ~ p {
+            font-style: italic;
+        }
+
+
+        /* ============================================
+           ✅ 3. PSEUDO-CLASS SELECTORS
+        ============================================ */
+
+        /* Hover effect */
+        a:hover {
+            color: red;
+        }
+
+        /* First child */
+        li:first-child {
+            color: darkorange;
+        }
+
+
+        /* ============================================
+           ✅ 4. PSEUDO-ELEMENT SELECTORS
+        ============================================ */
+
+        /* First letter styling */
+        p::first-letter {
+            font-size: 25px;
+            font-weight: bold;
+            color: darkred;
+        }
+
+        /* Adding content before heading */
+        h2::before {
+            content: "👉 ";
+        }
+
+
+        /* ============================================
+           ✅ 5. ATTRIBUTE SELECTORS
+        ============================================ */
+
+        /* Input type selector */
+        input[type="text"] {
+            border: 2px solid green;
+            padding: 5px;
+        }
+
+        /* Links with target attribute */
+        a[target="_blank"] {
+            background-color: yellow;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ID Selector Example -->
+    <h1 id="mainHeading">CSS Selector Forms Demonstration</h1>
+
+
+    <!-- Class Selector Example -->
+    <div class="box">
+        <h2>Simple Selectors</h2>
+        <p>This paragraph uses element selector.</p>
+        <p>This is another paragraph.</p>
+    </div>
+
+
+    <!-- Combinator Selector Example -->
+    <div class="box">
+        <h2>Combinator Selectors</h2>
+
+        <h3>Child Selector Example</h3>
+
+        <p>This paragraph is inside div (descendant selector).</p>
+    </div>
+
+
+    <!-- Adjacent and General Sibling -->
+    <h2>Sibling Selector Example</h2>
+    <p>This is adjacent sibling paragraph (+).</p>
+    <p>This is general sibling paragraph (~).</p>
+
+
+    <!-- Pseudo-class Selector -->
+    <div class="box">
+        <h2>Pseudo-class Selector</h2>
+        <a href="https://google.com" target="_blank">Hover over this link</a>
+
+        <ul>
+            <li>First Item</li>
+            <li>Second Item</li>
+            <li>Third Item</li>
+        </ul>
+    </div>
+
+
+    <!-- Attribute Selector -->
+    <div class="box">
+        <h2>Attribute Selector</h2>
+
+        Enter Name:
+        <input type="text" placeholder="Text Input">
+
+        <br><br>
+
+        Enter Password:
+        <input type="password" placeholder="Password Input">
+    </div>
+
+</body>
+</html>

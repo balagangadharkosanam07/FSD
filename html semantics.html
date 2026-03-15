@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 Semantic Tags Example</title>
+    <style>
+        body {
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        header, nav, main, section, article, aside, footer {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px 0px;
+        }
+
+        nav {
+            background-color: lightgray;
+        }
+
+        aside {
+            background-color: #f2f2f2;
+        }
+
+        footer {
+            text-align: center;
+            background-color: lightgray;
+        }
+
+        span {
+            color: red;
+            font-weight: bold;
+        }
+
+        div {
+            background-color: #e6f7ff;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>My Website Header</h1>
+        <p>Welcome to <span>HTML5 Semantic Tags</span> Example</p>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <!-- SECTION -->
+        <section>
+            <h2>Section: Web Development</h2>
+
+            <!-- ARTICLE -->
+            <article>
+                <h3>Article: HTML5 Introduction</h3>
+                <p>
+                    HTML5 provides new semantic elements like
+                    <span>&lt;article&gt;</span>, 
+                    <span>&lt;section&gt;</span>, 
+                    <span>&lt;nav&gt;</span> for better structure.
+                </p>
+
+                <!-- FIGURE -->
+                <figure>
+                    <img src="https://via.placeholder.com/250"
+                         alt="Sample Image">
+                    
+                    <!-- FIGCAPTION -->
+                    <figcaption>
+                        Fig: Sample Image inside Figure Tag
+                    </figcaption>
+                </figure>
+            </article>
+
+        </section>
+
+        <!-- ASIDE -->
+        <aside>
+            <h3>Aside: Related Information</h3>
+            <p>
+                This is an aside section which contains extra or side content.
+            </p>
+        </aside>
+
+        <!-- DIV -->
+        <div>
+            <p>
+                This is a <span>DIV</span> container used for grouping content.
+            </p>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Footer: © 2026 My Website | Designed using HTML5 Tags</p>
+    </footer>
+
+</body>
+</html>
